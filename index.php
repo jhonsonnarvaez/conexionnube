@@ -1,10 +1,10 @@
 <?php
 
 $url = parse_url ( getenv (" CLEARDB_DATABASE_URL "));
-$server = " us-cdbr-iron-east-02.cleardb.net";
-$username = " be505b883b85da ";
-$password = " b22b5198 ";
-$db = substr ( " heroku_a6c93f827357fde ", 1);
+$server = $url [" host "];
+$username = $url [" user "];
+$password = $url [" pass "];
+$db = substr ( $url [" path "], 1);
 
 $conn = new mysqli ( $server , $username , $password , $db);
 

@@ -1,6 +1,6 @@
 <?php
-session_start();
-if (isset($_SESSION['usuario']) == true and isset($_SESSION['perfil']) == true) {
+include './conexion.php';
+if (isset($_SESSION['usuario']) == true or isset($_SESSION['perfil']) == true) {
 
     if($_SESSION['perfil']=='Administrador'){
           header("Location: Administrador.php");
@@ -9,7 +9,6 @@ if (isset($_SESSION['usuario']) == true and isset($_SESSION['perfil']) == true) 
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,18 +19,17 @@ if (isset($_SESSION['usuario']) == true and isset($_SESSION['perfil']) == true) 
     </head>
     <body>
         <div id="caja">
-            <center><h1>Login</h1></center>
+            <h1>Login</h1>
             <form id="form">
             
-                <label for="usuario"></label><center><input type="text" name="usuario" id="usuario"  class="placeholder" placeholder="Usuario" required></center>
-                <label for="contrasena"></label><center><input type="password" name="contrasena" id="contrasena"  class="placeholder" placeholder="Contraseña" required></center>
-            <center><label for="opcion">Elija su área:</label>
+                <label for="usuario"></label><input type="text" id="usuario" name="usuario" class="placeholder" placeholder="Usuario" required>
+                <label for="contrasena"></label><input type="password" id="contrasena" name="contrasena" class="placeholder" placeholder="ContraseÃ±a" required>
+            <label for="opcion">Elija su Ã¡rea:</label>
             <select id="perfil">
-                <option value="Administrador">Administrador</option>
+                <option value="administrador">Administrador</option>
                 <option value="Usuario">Usuario</option>
-            </select></center>
-            <br>
-            <center><input type="button" id="ingresar" value="Iniciar Sesión"></center>
+            </select>
+            <center><input type="button" id="ingresar" value="Iniciar SesiÃ³n"></center>
             <div id="mensaje"></div>
         </form>
         </div>

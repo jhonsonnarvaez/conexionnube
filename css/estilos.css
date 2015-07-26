@@ -1,0 +1,76 @@
+.show-grid{margin-bottom:15px}
+.show-grid [class^=col-]{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+#caja{
+    background: #ddd;
+    width: 400px;
+    border: 1px solid white;
+    margin: 200px auto;
+    padding: 1em;
+    border-radius: 6px;
+}
+h1,h2,h3,h4{
+    font-family: arial;
+    color: #0080ff;
+}
+input[type=text],input[type=password]{
+    margin: 0 0 1em 0;
+    width: :200px;
+    border: 0px;
+    padding: 1em;
+    border-radius: 3px
+}
+body{
+    font-family: sans-serif;
+
+    background-color: #323B55;
+    background-image: -webkit-linear-gradient(bottom, #323B55 0%, #424F71 100%);
+    background-image: -moz-linear-gradient(bottom, #323B55 0%, #424F71 100%);
+    background-image: -o-linear-gradient(bottom, #323B55 0%, #424F71 100%);
+    background-image: -ms-linear-gradient(bottom, #323B55 0%, #424F71 100%);
+    background-image: linear-gradient(bottom, #323B55 0%, #424F71 100%);
+}
+input[type=button]{
+    padding: 1em;
+    background: #0080ff;
+    border: none;
+    color: white;
+    font-family: arial black;
+}
+#caja input[type="text"]:focus,#caja input[type="password"]:focus {
+    -webkit-box-shadow: inset 0px 2px 0px #a7a7a7;
+    box-shadow: inset 0px 2px 0px #a7a7a7;
+}
+input[type=button]:hover{
+    background-color: #5f73e9;
+}
+select {
+    background : white;
+    border : 1px solid rgba(0, 0, 0, .49);
+    font-size : 14px;
+    height : 30px;
+    padding : 5px;
+    width : 0 0 1em 0;
+}
+select:focus {
+    outline : none;
+}
+#area {
+    margin : 20px auto 40px auto;
+    border : 1px solid rgba(0, 0, 0, .49);
+    height : 30px;
+    overflow : hidden;
+    width : 100%;
+    position : relative;
+}
+label {
+    display: block;
+    margin: .5em 0 0 0;
+}

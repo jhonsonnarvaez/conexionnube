@@ -1,5 +1,0 @@
-Options +MultiViews
-
-php_value auto_prepend_file C:\xampp\htdocs\Proyecto\inc\config.php
-
-
